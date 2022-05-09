@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.gosp.apps.mlapp.ui.SomethingWrongFragment"
+        android:background="@color/ml_color_light_gray">
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ml_ups_error"
+            android:layout_marginBottom="@dimen/dimen_margin_extra_big"
+            app:layout_constraintStart_toStartOf="@+id/tvTryAgain"
+            app:layout_constraintEnd_toEndOf="@+id/tvTryAgain"
+            app:layout_constraintBottom_toTopOf="@+id/tvTryAgain"/>
+        <TextView
+            android:id="@+id/tvTryAgain"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/ml_color_txt_blue"
+            android:textStyle="bold"
+            android:textSize="@dimen/defaultTextSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Volver atrás" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

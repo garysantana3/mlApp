@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.core.widget.NestedScrollView
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_margin_medium">
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_margin_medium"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/interTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Title Product"/>
+            <ImageView
+                android:id="@+id/ivSlide"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/ml_color_low_gray"
+                android:layout_marginTop="@dimen/dimen_margin_extra_big"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_margin_mega_small"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/largeTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivSlide"
+                tools:text="$ 0.000"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_margin_mega_small"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:textSize="@dimen/defaultTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrice"
+                tools:text="Description"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

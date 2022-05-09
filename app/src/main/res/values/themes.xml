@@ -1,10 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MlApp" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.MlApp" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorPrimary">@color/ml_color_main_yellow</item>
+        <item name="colorPrimaryVariant">@color/ml_color_main_yellow</item>
+        <item name="colorOnPrimary">@color/ml_color_main_yellow</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
